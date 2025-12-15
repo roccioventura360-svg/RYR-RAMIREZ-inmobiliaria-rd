@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ryr-ramirez-inmobiliaria-rd.vercel.app/sitemap.xml

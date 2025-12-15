@@ -1,3 +1,6 @@
+<a href="/mapa" style={{ display: "inline-block", marginBottom: "20px" }}>
+  🗺️ Ver mapa interactivo
+</a>
 import Head from "next/head";
 import { useState } from "react";
 
@@ -8,6 +11,7 @@ export default function Home() {
   const handleAskAI = () => {
     if (!question) return;
 
+    // Simulación de IA (luego se conecta a OpenAI)
     setAnswer(
       "🤖 Recomendación IA: Tenemos excelentes opciones en Santo Domingo y Punta Cana. Un asesor te contactará con propiedades que se ajusten a tu búsqueda."
     );
@@ -16,28 +20,12 @@ export default function Home() {
   return (
     <>
       <Head>
-  <title>Inmobiliaria en República Dominicana | RYR Ramírez</title>
-
-  <meta
-    name="description"
-    content="Compra, venta y alquiler de propiedades en República Dominicana. Apartamentos, casas y proyectos inmobiliarios con asesoría profesional."
-  />
-
-  <meta
-    name="keywords"
-    content="inmobiliaria republica dominicana, casas en venta rd, apartamentos en santo domingo, propiedades punta cana, bienes raices rd"
-  />
-
-  <meta name="author" content="RYR Ramírez Inmobiliaria RD" />
-
-  {/* SEO social */}
-  <meta property="og:title" content="RYR Ramírez Inmobiliaria RD" />
-  <meta
-    property="og:description"
-    content="Inmobiliaria moderna en República Dominicana con asesoría inteligente."
-  />
-  <meta property="og:type" content="website" />
-</Head>
+        <title>RYR Ramírez Inmobiliaria RD</title>
+        <meta
+          name="description"
+          content="Inmobiliaria moderna con asesoría inteligente en República Dominicana"
+        />
+      </Head>
 
       <main className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
         {/* HERO */}
@@ -45,14 +33,12 @@ export default function Home() {
           <h1 className="text-4xl md:text-6xl font-extrabold text-gray-900">
             RYR Ramírez Inmobiliaria RD
           </h1>
-
           <p className="mt-6 text-lg text-gray-600 max-w-2xl mx-auto">
             Compra, vende o alquila propiedades en República Dominicana con
             asesoría inteligente y personalizada.
           </p>
 
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            {/* Botón Explorar */}
             <a
               href="#propiedades"
               className="bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition"
@@ -60,15 +46,6 @@ export default function Home() {
               Explorar Propiedades
             </a>
 
-            {/* Botón Mapa */}
-            <a
-              href="/mapa"
-              className="bg-blue-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-600 transition"
-            >
-              🗺️ Ver mapa de propiedades
-            </a>
-
-            {/* WhatsApp */}
             <a
               href="https://wa.me/18090000000"
               target="_blank"
