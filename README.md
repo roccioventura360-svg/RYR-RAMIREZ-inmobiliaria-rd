@@ -43,3 +43,5 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 # RYR-RAMIREZ-inmobiliaria-rd
 Opción breve y clara  Plataforma inmobiliaria y de arquitectura en la República Dominicana, especializada en proyectos, inversión y diseño.
 >>>>>>> 97a9ab92c269a4c75b1853dcc969ce8a472e1da3
+Deployed successfully on Vercel 🚀
+
